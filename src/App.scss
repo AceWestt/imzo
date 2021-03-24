@@ -1,0 +1,23 @@
+@import './variables';
+@import './_functions.scss';
+@import './pages/layout/layout.scss';
+@import './pages/home/home.scss';
+
+.z--is1 {
+  z-index: 1;
+}
+
+h1,
+h2,
+h3,
+p {
+  width: 100%;
+  text-align: center;
+}
+
+body {
+  overflow-x: hidden;
+  &.unscrollable {
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,106 @@
+.layout {
+  &__wrapper {
+    width: 100%;
+    height: 100%;
+    @include flex-all-center();
+    padding: auto;
+  }
+  &__container {
+    @include layout-container($navbarLgDescWidth);
+    &.navbar {
+      height: auto;
+      background-color: transparent;
+      @include flex-space-between-center();
+      div {
+        float: left;
+      }
+    }
+  }
+}
+
+.navbar {
+  background-color: #272727;
+  height: $navbarLgDescHeight;
+}
+
+.logo-holder {
+  width: 66px;
+  img {
+    width: 100%;
+  }
+}
+
+.menu-list {
+  &-holder {
+    width: auto;
+    .link-item {
+      color: #ffffff;
+      font-size: 12px;
+      margin-right: 68px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.search-holder {
+  width: 90px;
+  input {
+    width: 100%;
+    font-size: 6px;
+    padding: 4px 7px;
+    border-radius: 14px;
+    background-color: #383838;
+    border: transparent;
+    color: #ffffff;
+  }
+}
+
+.bg-img-holder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  video {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  .bg-cover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+}
+
+.btn-holder {
+  width: 100%;
+  @include flex-all-center;
+  .btn {
+    color: #ffffff;
+    background-color: transparent;
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: 1px solid #ffffff;
+    text-decoration: none;
+    &.blue {
+      border: 1px solid #0085ff;
+      color: #0085ff;
+    }
+  }
+}
